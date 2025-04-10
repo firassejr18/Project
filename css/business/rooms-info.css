@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* CSS Document */
+*{
+    user-select: none;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: #392761ff;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #392761ff;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 0px;
+    
+}
+
+.container {
+    width: 70%;
+    background: #FCFCFAff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(194, 195, 226, 0.379);
+    margin: 100px 0 100px 0;
+}
+
+.hotelForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.roomsContainer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C2C3E2ff;
+    padding: 10px 0 95px 0;
+    border-radius: 50px;
+}
+.featuresContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #C2C3E2ff;
+    padding: 10px 0 95px 0;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #392761;
+    font-size: 40px;
+}
+
+h3 {
+    text-align: center;
+    color: #392761;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
+.room-section {
+    width: 80%;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(194, 195, 226, 0.379);
+    margin: 10px 0 10px 0;
+}
+
+.features-section {
+    width: 80%;
+    background: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(194, 195, 226, 0.379);
+    margin: 10px 0 10px 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 0px 10px;
+    margin: 10px auto;
+    background: #C2C3E2ff;
+    border-radius: 10px;
+}
+
+.input-box:focus-within, .input-box:hover {
+    border: 2px solid #3E40AE;
+}
+
+.input, .input-label {
+    display: block;
+    width: 98%;
+    padding: 16px 0px;
+    margin: auto 20px;
+    background: #C2C3E2ff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    color: #392761ff;
+}
+
+.input-file {
+    display: none;
+}
+
+#file-name {
+    margin: auto 20px;
+    font-size: 16px;
+    color: #392761ff;
+}
+
+.input::placeholder {
+    color: #392761;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+.buttons, .room-header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 50px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+}
+
+.checkbox {
+    display: block;
+    width: 45%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    background: #C2C3E2ff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    color: #392761ff;
+    cursor: pointer;
+}
+.checkbox:hover,.checkbox:has(input:checked) {
+    background: #3E40AE;
+    color: white;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+    
+}
+
+.checkbox .bx.bx-check-square::before {
+    display: none;
+}
+
+
+.checkbox input[type="checkbox"]:checked + .bx.bx-check-square::before {
+    display:inline;
+    background-color: transparent;
+}
+
+.bx.bxs-message-square-x::before {
+    color: rgb(224, 7, 7);
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.roomsContainer .btn {
+    position: absolute;
+    bottom: 20px;
+    width: 30%;
+    padding: 20px;
+    background: #3E40AE;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 0px auto;
+}
+
+.btn {
+    width: 40%;
+    padding: 20px;
+    background: #3E40AE;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 20px 150px;
+}
+.bx.bx-message-square-add::before, .bx.bx-check-square::before {
+    cursor: pointer;
+    font-size: 25px;
+    margin-right:12px;
+    vertical-align: -15%;
+}
+
+.btn:hover {
+    background: #2C2E8A;
+}
+
+
+
+
+
+
+.image-upload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#image-input {
+    display: block;
+    padding: 16px 0px;
+    margin: auto 20px;
+    background: #C2C3E2ff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #392761ff;
+}
+
+.image {
+    color: #392761;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+
+.image-box {
+    width: 95%;
+    padding: 0px 10px;
+    margin: 10px auto;
+    background: #C2C3E2ff;
+    border-radius: 10px;
+}
+
+.bx.bx-image-add::before {
+    color: #392761;
+    font-size: 50px;
+    margin: 10px 10px;
+}
+/* 🔹 Universal Responsive Design */
+@media screen and (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .content h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    .content p {
+        max-width: 95%;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .image img {
+        max-width: 100%;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+}
